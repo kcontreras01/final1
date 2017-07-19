@@ -41,6 +41,27 @@ p {
   font-size: 1.4em;
   margin-left: 2.8em;
 }
+
+/*nav {
+  display: block;
+  width: 4em;
+  font-size: 1em;
+  padding: .5em;
+  background-color: #cccccc;
+  margin: 0;
+  padding: 0;
+  opacity: .5;
+  float: left
+}
+nav a {
+    color: white;
+    display: block;
+}
+a:hover {
+    background-color: #555;
+    color: white;
+}*/
+
 #scroll {
   font-size: .5em;
   text-align: center;
