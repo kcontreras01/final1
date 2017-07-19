@@ -1,0 +1,231 @@
+/* Simple CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #f0efef;
+  font-size: 25px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background: url("../images/desk2.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+h3, h4 {
+  color: #033048;
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+  padding-top: .5em;
+}
+
+.logo {
+  margin: 0 auto;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+#me {
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  float: right;
+}
+
+p {
+  font-size: 1.4em;
+  margin-left: 2.8em;
+}
+
+#page1 p {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+
+#page2 {
+  background-color: #edf0f5;
+}
+
+#page2 p {
+/*  width: 36em;*/
+  color: black;
+  display: inline-block;
+}
+
+#page3 {
+  background-color: #5ac8fa;
+}
+
+#page4 {
+  background-color: #fc2a19;
+}
+
+#page5 {
+/*  background-color: #edf0f5;*/
+}
+
+#page5 img{
+  width: 2em;
+  height: 2em;
+
+}
+/*#page5 a {
+  display: inline-block;
+  color: black;
+}*/
+
+@media screen and (min-width: 400px) {
+  .logo {
+    font-size: 4em;
+  }
+/*  nav {
+    padding: 1.1em;
+    position: fixed;
+    background-color: #cccccc;
+  }
+  nav a{
+    color: black;
+    display: inline-block; 
+    padding: 2px;
+    font-size: .75em;
+  }
+  nav a:hover {
+    color: #ffffff;
+  }*/
+  header {
+    width: 100%;
+  }
+  p {
+    font-size: 1em;
+    text-align: justify;
+  }
+  img {
+    float: none;
+    text-align: center;
+    padding: 1.25em;
+  }
+  #page1, #page2, #page3, #page4, #page5{
+    padding: 0 auto;
+  }
+  #page2 p {
+    font-size: .77em;
+  }
+  #page4 {
+    display: inline-block;
+  }
+  #page5 img {
+    width: 1.5em;
+    height: 1.5em;
+    padding-top: 0;
+    padding-bottom: 2em;
+  }
+  .contain {
+    width: 14em;
+  }
+  .copyright {
+    text-align: justify;
+    color: #033048;
+  }
+
+}
+@media screen and (min-width: 500px) {
+    .logo {
+    font-size: 6em;
+  }
+  header {
+    width: 100%;
+  }
+/*  nav {
+  opacity: .25;
+  position: fixed;
+  display: block;
+
+}
+  nav a {
+  width: 10px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  display: block;
+}
+
+nav a:hover {
+  color: #ffffff;
+}*/
+  p {
+    font-size: 1em;
+    text-align: justify;
+  }
+  img {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    padding: 1.25em;
+    top: 0;
+    right: 0;
+  }
+  #page1, #page2, #page3, #page4, #page5{
+    padding: 0 auto;
+  }
+  #page2 p {
+    font-size: 1em;
+    padding: 5px;
+    float: left;
+  }
+  #page4 {
+    display: inline-block;
+  }
+  .contain {
+    width: 18em;
+  }
+  .copyright {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 700px) {
+  .contain {
+    width: 26em;
+  }
+/*  nav {
+    margin-top: 225px;
+  }
+*/
+  p {
+    font-size: 1.5em;
+    text-align: justify;
+  }
+  #page2 p {
+    font-size: 1.5em;
+    padding: 5px;
+    float:left;
+  }
+}
+@media screen and (min-width: 800px) {
+  .contain {
+    width: 30em;
+  }
+  img {
+    margin-right: 100px;
+  }
