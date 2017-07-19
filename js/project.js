@@ -8,3 +8,10 @@ $('#fullpage').fullpage({
 	scrollingSpeed: '900',
 	fitToSection: 'true',
 });
+
+window.sr = ScrollReveal();
+sr.reveal('#page1', {duration: 2000});
+
+$(document).ready(function(){
+    jQuery.goup();
+});

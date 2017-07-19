@@ -1,4 +1,6 @@
-/* Simple CSS Reset */
+/* What is creating space in between page2 h2 and paragraph?*/
+/*What is creating space in between Contact and icons?*/
+/*animate all pages*/
 
 * {
   margin: 0;
@@ -6,10 +8,9 @@
 }
 
 body {
-  color: #f0efef;
   font-size: 25px;
   line-height: 1.4;
-  color: #606161;
+  color: #7C7C7F;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
 }
@@ -25,13 +26,21 @@ header {
   background-size: cover;
 }
 
-h3, h4 {
-  color: #033048;
-  font-size: 1.6em;
-  font-weight: 600;
+h2 {
+  font-size: 2em;
+  font-weight: 700;
   margin-bottom: 1.6em;
   padding-left: 1em;
   padding-top: .5em;
+  padding-bottom: .25em;
+}
+
+#scroll {
+  font-size: .5em;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding-top: 2em;
 }
 
 .logo {
@@ -46,7 +55,6 @@ h3, h4 {
   width: 13em;
   height: 13em;
   border-radius: 50%;
-  float: right;
 }
 
 p {
@@ -64,25 +72,18 @@ p {
 }
 
 #page2 {
-  background-color: #edf0f5;
-}
-
-#page2 p {
-/*  width: 36em;*/
-  color: black;
-  display: inline-block;
+  background: url("../images/wall.jpg");
+  background-size: cover;
+  color: #202021;
 }
 
 #page3 {
-  background-color: #5ac8fa;
+   background: url("../images/buildings.jpg");
+   color: #202021;
 }
 
 #page4 {
-  background-color: #fc2a19;
-}
-
-#page5 {
-/*  background-color: #edf0f5;*/
+   background: url("../images/cube.jpg");
 }
 
 #page5 img{
@@ -90,29 +91,27 @@ p {
   height: 2em;
 
 }
-/*#page5 a {
-  display: inline-block;
-  color: black;
-}*/
 
 @media screen and (min-width: 400px) {
   .logo {
     font-size: 4em;
+    text-align: justify;
+    padding-left: 5px;
   }
-/*  nav {
-    padding: 1.1em;
-    position: fixed;
-    background-color: #cccccc;
+  #page1 p {
+    text-align: justify;
+    padding-left: 10px;
+    font-size: 1.5em;
+    color: #666666;
   }
-  nav a{
-    color: black;
-    display: inline-block; 
-    padding: 2px;
-    font-size: .75em;
+  #page2 h2 {
+    padding-bottom: 10px;
   }
-  nav a:hover {
-    color: #ffffff;
-  }*/
+  #page2 p {
+    font-size: .77em;
+    margin-top: 0;
+  }
+
   header {
     width: 100%;
   }
@@ -120,60 +119,38 @@ p {
     font-size: 1em;
     text-align: justify;
   }
-  img {
+  #me {
     float: none;
-    text-align: center;
-    padding: 1.25em;
+    padding: 2.5em;
+    width: 10em;
+    height: 10em;
+    margin: auto;
   }
   #page1, #page2, #page3, #page4, #page5{
     padding: 0 auto;
   }
-  #page2 p {
-    font-size: .77em;
-  }
-  #page4 {
-    display: inline-block;
-  }
+
   #page5 img {
-    width: 1.5em;
-    height: 1.5em;
-    padding-top: 0;
-    padding-bottom: 2em;
+    width: 3em;
+    height: 3em;
+    padding: 2em;
+    display: inline-block;
   }
   .contain {
     width: 14em;
+    padding-top: 0;
   }
   .copyright {
     text-align: justify;
     color: #033048;
+    bottom: 0;
   }
-
 }
 @media screen and (min-width: 500px) {
-    .logo {
-    font-size: 6em;
-  }
   header {
     width: 100%;
   }
-/*  nav {
-  opacity: .25;
-  position: fixed;
-  display: block;
 
-}
-  nav a {
-  width: 10px;
-  text-align: center;
-  color: black;
-  text-decoration: none;
-  padding: 0;
-  display: block;
-}
-
-nav a:hover {
-  color: #ffffff;
-}*/
   p {
     font-size: 1em;
     text-align: justify;
@@ -197,29 +174,45 @@ nav a:hover {
   #page4 {
     display: inline-block;
   }
+    #page5 img {
+    padding: 1em;
+    position: center;
+  }
   .contain {
     width: 18em;
   }
   .copyright {
-    text-align: justify;
+    text-align: center;
   }
 }
 @media screen and (min-width: 700px) {
+    .logo {
+    font-size: 6em;
+    text-align: center;
+    color: white;
+  }
+  #page1 p {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+  }
   .contain {
     width: 26em;
   }
-/*  nav {
-    margin-top: 225px;
+  .copyright {
+    text-align: center;
   }
-*/
   p {
     font-size: 1.5em;
     text-align: justify;
   }
   #page2 p {
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 5px;
     float:left;
+  }
+  #page5 img {
+/*    padding: .5em;*/
   }
 }
 @media screen and (min-width: 800px) {
@@ -229,3 +222,27 @@ nav a:hover {
   img {
     margin-right: 100px;
   }
+    .copyright {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 900px) {
+      #page5 img {
+  }
+}
+@media screen and (min-width: 1000px) {
+  #me {
+    height: 15em;
+    width: 15em;
+    float: right;
+    margin-right: 50px;
+    display: inline-block;
+  }
+  #page2 p {
+    float: left;
+    display: inline-block;
+  }
+}
+
+
+
