@@ -1,6 +1,8 @@
 /* What is creating space in between page2 h2 and paragraph?*/
 /*What is creating space in between Contact and icons?*/
 /*animate all pages*/
+@import "normalize.min.css";
+
 
 * {
   margin: 0;
@@ -227,15 +229,18 @@ p {
 
 @media screen and (min-width: 1000px) {
   #me {
-    height: 15em;
-    width: 15em;
+    height: 20em;
+    width: 20em;
     float: right;
     margin-right: 50px;
+    margin-left: 10px;
+    vertical-align: top;
     display: inline-block;
   }
   #page2 p {
     float: left;
     display: inline-block;
+    font-size: 1.6em;
   }
 }
 

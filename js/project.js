@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage();
 });
+
+
 $('#fullpage').fullpage({
 	navigation: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
 	menu: '#myMenu',
