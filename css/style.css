@@ -35,6 +35,10 @@ h2 {
   padding-bottom: .25em;
 }
 
+p {
+  font-size: 1.4em;
+  margin-left: 2.8em;
+}
 #scroll {
   font-size: .5em;
   text-align: center;
@@ -55,11 +59,6 @@ h2 {
   width: 13em;
   height: 13em;
   border-radius: 50%;
-}
-
-p {
-  font-size: 1.4em;
-  margin-left: 2.8em;
 }
 
 #page1 p {
@@ -112,13 +111,6 @@ p {
     margin-top: 0;
   }
 
-  header {
-    width: 100%;
-  }
-  p {
-    font-size: 1em;
-    text-align: justify;
-  }
   #me {
     float: none;
     padding: 2.5em;
@@ -144,6 +136,13 @@ p {
     text-align: justify;
     color: #033048;
     bottom: 0;
+  }
+  header {
+    width: 100%;
+  }
+  p {
+    font-size: 1em;
+    text-align: justify;
   }
 }
 @media screen and (min-width: 500px) {
@@ -174,7 +173,7 @@ p {
   #page4 {
     display: inline-block;
   }
-    #page5 img {
+  #page5 img {
     padding: 1em;
     position: center;
   }
@@ -185,8 +184,9 @@ p {
     text-align: center;
   }
 }
+
 @media screen and (min-width: 700px) {
-    .logo {
+  .logo {
     font-size: 6em;
     text-align: center;
     color: white;
@@ -202,34 +202,29 @@ p {
   .copyright {
     text-align: center;
   }
-  p {
-    font-size: 1.5em;
-    text-align: justify;
-  }
   #page2 p {
     font-size: 1em;
     padding: 5px;
     float:left;
   }
-  #page5 img {
-/*    padding: .5em;*/
+  p {
+    font-size: 1.5em;
+    text-align: justify;
   }
 }
+
 @media screen and (min-width: 800px) {
-  .contain {
-    width: 30em;
-  }
   img {
     margin-right: 100px;
   }
-    .copyright {
+  .copyright {
     text-align: center;
   }
-}
-@media screen and (min-width: 900px) {
-      #page5 img {
+  .contain {
+    width: 30em;
   }
 }
+
 @media screen and (min-width: 1000px) {
   #me {
     height: 15em;
