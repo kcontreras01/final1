@@ -1,0 +1,269 @@
+/* What is creating space in between page2 h2 and paragraph?*/
+/*What is creating space in between Contact and icons?*/
+/*animate all pages*/
+@import "normalize.min.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 25px;
+  line-height: 1.4;
+  color: #7C7C7F;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background: url("../images/desk2.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+  padding-top: .5em;
+  padding-bottom: .25em;
+}
+
+p {
+  font-size: 1.4em;
+  margin-left: 2.8em;
+}
+
+/*nav {
+  display: block;
+  width: 4em;
+  font-size: 1em;
+  padding: .5em;
+  background-color: #cccccc;
+  margin: 0;
+  padding: 0;
+  opacity: .5;
+  float: left
+}
+nav a {
+    color: white;
+    display: block;
+}
+a:hover {
+    background-color: #555;
+    color: white;
+}*/
+
+#scroll {
+  font-size: .5em;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding-top: 2em;
+}
+
+.logo {
+  margin: 0 auto;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+#me {
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+}
+
+#page1 p {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+
+#page2 {
+  background: url("../images/wall.jpg");
+  background-size: cover;
+  color: #202021;
+}
+
+#page3 {
+   background: url("../images/buildings.jpg");
+   color: #202021;
+}
+
+#page4 {
+   background: url("../images/cube.jpg");
+}
+
+#page5 img{
+  width: 2em;
+  height: 2em;
+
+}
+
+@media screen and (min-width: 400px) {
+  .logo {
+    font-size: 4em;
+    text-align: justify;
+    padding-left: 5px;
+  }
+  #page1 p {
+    text-align: justify;
+    padding-left: 10px;
+    font-size: 1.5em;
+    color: #666666;
+  }
+  #page2 h2 {
+    padding-bottom: 10px;
+  }
+  #page2 p {
+    font-size: .77em;
+    margin-top: 0;
+  }
+
+  #me {
+    float: none;
+    padding: 2.5em;
+    width: 10em;
+    height: 10em;
+    margin: auto;
+  }
+  #page1, #page2, #page3, #page4, #page5{
+    padding: 0 auto;
+  }
+
+  #page5 img {
+    width: 3em;
+    height: 3em;
+    padding: 2em;
+    display: inline-block;
+  }
+  .contain {
+    width: 14em;
+    padding-top: 0;
+  }
+  .copyright {
+    text-align: justify;
+    color: #033048;
+    bottom: 0;
+  }
+  header {
+    width: 100%;
+  }
+  p {
+    font-size: 1em;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 500px) {
+  header {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1em;
+    text-align: justify;
+  }
+  img {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    padding: 1.25em;
+    top: 0;
+    right: 0;
+  }
+  #page1, #page2, #page3, #page4, #page5{
+    padding: 0 auto;
+  }
+  #page2 p {
+    font-size: 1em;
+    padding: 5px;
+    float: left;
+  }
+  #page4 {
+    display: inline-block;
+  }
+  #page5 img {
+    padding: 1em;
+    position: center;
+  }
+  .contain {
+    width: 18em;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .logo {
+    font-size: 6em;
+    text-align: center;
+    color: white;
+  }
+  #page1 p {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+  }
+  .contain {
+    width: 26em;
+  }
+  .copyright {
+    text-align: center;
+  }
+  #page2 p {
+    font-size: 1em;
+    padding: 5px;
+    float:left;
+  }
+  p {
+    font-size: 1.5em;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  img {
+    margin-right: 100px;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .contain {
+    width: 30em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #me {
+    height: 20em;
+    width: 20em;
+    float: right;
+    margin-right: 50px;
+    margin-left: 10px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  #page2 p {
+    float: left;
+    display: inline-block;
+    font-size: 1.6em;
+  }
+}
+
+
+
