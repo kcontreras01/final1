@@ -3,7 +3,6 @@
 /*animate all pages*/
 @import "normalize.min.css";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -12,28 +11,28 @@
 body {
   font-size: 25px;
   line-height: 1.4;
-  color: #7C7C7F;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
 }
 
 a {
   text-decoration: none;
+  font-size: 40px;
 }
 
 header {
   height: 100%;
   width: 100%;
-  background: url("../images/desk2.jpg") no-repeat center top;
   background-size: cover;
+  background-color: #E8EDF2;
+
 }
 
 h2 {
   font-size: 2em;
   font-weight: 700;
-  margin-bottom: 1.6em;
+  margin-bottom: .5em;
   padding-left: 1em;
-  padding-top: .5em;
   padding-bottom: .25em;
 }
 
@@ -41,6 +40,20 @@ p {
   font-size: 1.4em;
   margin-left: 2.8em;
 }
+
+
+.skill-block {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill-window {
+  width: 25vw;
+}
+
 
 /*nav {
   display: block;
@@ -62,20 +75,12 @@ a:hover {
     color: white;
 }*/
 
-#scroll {
-  font-size: .5em;
-  text-align: center;
-  display: block;
-  margin: 0;
-  padding-top: 2em;
-}
-
 .logo {
   margin: 0 auto;
   font-size: 5em;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: #8D979E;
 }
 
 #me {
@@ -94,25 +99,73 @@ a:hover {
 }
 
 #page2 {
-  background: url("../images/wall.jpg");
+  background: #140F25;
   background-size: cover;
-  color: #202021;
+  color: white;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 #page3 {
-   background: url("../images/buildings.jpg");
-   color: #202021;
+   background: #CCD6EB;
 }
 
 #page4 {
-   background: url("../images/cube.jpg");
+  background: grey;
+  width: 100%;
+   color: white;
 }
 
-#page5 img{
-  width: 2em;
-  height: 2em;
-
+a {
+  text-decoration: none;
 }
+
+.fa {
+  color: black;
+  width: 5em;
+  font-size: 35px;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact i {
+  font-size: 40px;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  color: #8D979E;
+  background-size: contain;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+   transform: translateY(0);
+  }
+  40% {
+   transform: translateY(-30px);
+  }
+  60% {
+   transform: translateY(-15px);
+  }
+}
+
 
 @media screen and (min-width: 400px) {
   .logo {
@@ -211,13 +264,14 @@ a:hover {
 @media screen and (min-width: 700px) {
   .logo {
     font-size: 6em;
+    margin: 0 auto;
     text-align: center;
-    color: white;
+    color: #777C7D;
   }
   #page1 p {
     text-align: center;
     font-size: 2em;
-    color: white;
+    color: #777C7D;
   }
   .contain {
     width: 26em;
@@ -231,7 +285,7 @@ a:hover {
     float:left;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: justify;
   }
 }
